@@ -1,0 +1,44 @@
+.header{
+    background-color: #B2B2B2;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 20px 8px !important
+}
+.logo{
+    display: inline;
+}
+.logo a{
+    font-size: 2.7rem;
+    color: #fff;
+    line-height: 1.7;
+}
+.logo a span{
+    color: #dc3545;
+}
+.quick-contact{
+    display: flex;
+    column-gap: 48px;
+}
+.quick{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.quick svg  {
+font-size: 2rem;
+}
+.quick1 svg{
+    color: #fdb62f;
+}
+.quick2 svg {
+    color: #fd4d40;
+
+}
+.quick p{
+    line-height: 1.2;
+    color: #fff;
+    font-size: .9rem;
+}
