@@ -1,17 +1,460 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower:regular);
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-*{
-    margin: 0  !important;
+
+* {
+    margin: 0 !important;
     padding: 0 !important;
+    font-weight: 300 !important;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-.container{
-    width: 1144px;
+
+.container {
+    width: 1140px;
     max-width: 100%;
     margin: 0 auto !important;
 }
 
 body {
     font-family: "DM Sans";
-  }
+    line-height: 1.7;
+}
+
+.bring-section {
+    background-color: #B2B2B2;
+    height: 92vh;
+    display: flex;
+
+}
+
+.bring {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.bring-text {
+    width: 40%;
+    margin-bottom: 90px !important;
+}
+
+.bring-text span {
+    color: #fd4d40;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+}
+
+.bring-text h2 {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 1rem !important;
+    font-weight: 700 !important;
+}
+
+.bring-text p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 1rem !important;
+}
+
+.bring-text a {
+    font-size: .8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: .2rem;
+    padding: 10px 20px !important;
+    padding-bottom: 1.5rem !important;
+    padding-top: 1.5rem !important;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 30px 0 !important;
+    background-color: #dc3545;
+    cursor: pointer;
+    margin: 25px 0 1rem 0 !important;
+}
+
+.bring-text a:hover {
+    background-color: #c82333;
+}
+
+.bring-img {
+    width: 50%;
+    height: 831px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.bring-img img {
+    height: 100%;
+}
+
+.color-section {
+    margin-top: 7rem !important;
+}
+
+.color-flex {
+    display: flex;
+    column-gap: 30px;
+}
+
+.color-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FD4D40;
+    position: relative;
+    padding: 40px !important;
+    text-align: center;
+}
+
+.color-card span {
+    margin-bottom: -5px !important;
+    position: absolute;
+    top: -30px;
+    background-color: #fd4d40;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 20px !important;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.color-card span svg {
+    color: #fff;
+}
+
+.color-card h2 {
+    margin-top: 54px !important;
+}
+
+.color-card h2 {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.color-card p {
+    line-height: 1.7;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+}
+
+.color-card-2 {
+    background-color: #FDB62F !important;
+}
+
+.color-card-3 {
+    background-color: #16C3B0 !important;
+}
+
+.about-section {
+    background-color: #F6F5F5;
+    margin-top: 112px !important;
+    padding: 112px 0 !important;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img {
+    width: 540px;
+
+    padding: 0 15px !important;
+}
+
+.about-img img {
+    width: 100% !important;
+}
+
+.about-text {
+    width: 38%;
+}
+
+.about-text span {
+    color: #fd4d40;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.about-text h2 {
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: #000;
+    font-size: 28px;
+    /* margin-top: 10px !important; */
+
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #364d59 !important;
+}
+
+.about-text a {
+    outline: none;
+    border: none;
+    padding: 10px 20px !important;
+    background-color: #ffc107;
+    border-radius: 30px 0;
+    padding-bottom: 1.5rem !important;
+    padding-top: 1.5rem !important;
+    cursor: pointer;
+    letter-spacing: .2rem;
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 48px 0 16px !important;
+    display: inline-block !important;
+    color: #000;
+}
+
+.about-text a:hover {
+    background-color: #e0a800;
+}
+
+
+.packages-section {
+    background-color: #17A2B8;
+    padding: 112px 0 !important;
+}
+
+.packages-card {
+    background-color: #fff;
+    width: 33.33%;
+    padding: 40px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.packages {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 3rem !important;
+}
+
+.packages-img {
+    width: 80px;
+    height: 80px;
+}
+
+.packages-img img {
+    width: 100%;
+}
+
+.packages-text-center {
+    text-align: center;
+}
+
+.packages-text-center span {
+    color: #fd4d40;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.packages-text-center h5 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.packages-card h3 {
+    font-size: 18px;
+    margin-bottom: 30px !important;
+    margin-top: 30px !important;
+    color: #16c3b0;
+    font-weight: 300;
+}
+
+.packages-card p {
+    text-align: center;
+    font-weight: 300;
+    color: #777;
+    margin-bottom: 1rem !important;
+}
+
+.packages-card a {
+    border-radius: 30px 0;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 10px 20px !important;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px !important;
+    margin-bottom: 1rem !important;
+}
+
+.packages-card .p1 {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.packages-card .p2 {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.packages-card .p2:hover {
+    background-color: #e0a800;
+}
+
+.packages-card .p3 {
+    background-color: #71bc42;
+    color: #fff;
+}
+
+.packages-card .p3:hover {
+    background-color: #5a9635;
+}
+
+.packages-card .p1:hover {
+    background-color: #c82333;
+}
+
+.packages-card .p-kids {
+    color: #dc3545 !important;
+}
+
+
+
+
+.pricing-section {
+    padding: 112px 0 !important;
+}
+
+.pricing {
+    display: flex;
+    column-gap: 20px;
+}
+
+.pricing-card {
+    width: 33.33%;
+}
+
+.pricing-card a {
+    border-radius: 30px 0;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 10px 20px !important;
+    background-color: #16c3b0;
+    color: #000;
+    font-weight: 300;
+}
+
+.pricing-card .plan {
+    color: #fd4d40 !important;
+    background-color: #fff !important;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.pricing-card h4 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.pricing-card p {
+    line-height: 1.7;
+    color: #364d59 !important;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.pricing-card .price {
+    font-size: 26px;
+    color: #364d59 !important;
+    background-color: #16c3b0;
+    border-radius: 50%;
+    padding: 20px !important;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-card .price2 {
+    font-size: 26px;
+    color: #364d59 !important;
+    background-color: #FD4D40;
+    border-radius: 50%;
+    padding: 20px !important;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-card h3 {
+    font-size: 20px;
+    margin: 30px 0 !important;
+    font-weight: 300 !important;
+    color: #364d59;
+}
+
+.pricing-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px !important;
+}
+
+.pricing-card li svg {
+    color: #16C3B0;
+}
+
+.pricing-card .red-done svg {
+    color: #FD4D40 !important;
+}
+
+.pricing-card a {
+    margin-top: 50px !important;
+    display: inline-block;
+}
+
+.pricing-card .bur-red {
+    background-color: #FD4D40;
+    color: #fff;
+}
+
+
+
+
+.testimonial-section{
+    background-color: #F6F5F5;
+    padding: 112px 0 !important;
+}
+.testimonial-center{
+    text-align: center;
+}
+.testimonial-center span{
+    color: #fd4d40;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+.testimonial-center h4{
+font-size: 2rem;
+}

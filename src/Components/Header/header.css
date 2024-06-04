@@ -4,7 +4,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px 20px 8px !important
+    padding: 13px 36px 14px 0px !important;
 }
 .logo{
     display: inline;
@@ -26,7 +26,6 @@ header{
     align-items: center;
     column-gap: 16px;
 }
-
 .quick svg  {
 font-size: 2rem;
 }
@@ -35,10 +34,48 @@ font-size: 2rem;
 }
 .quick2 svg {
     color: #fd4d40;
-
 }
 .quick p{
     line-height: 1.2;
     color: #fff;
     font-size: .9rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 36px 15px 20px !important;
+    background: #fff;
+    border-radius: 100px;
+    width: 98%;
+    z-index: 999 !important;
+    background-color: #fff;
+    position: relative;
+
+}
+.site-menu{
+    display: flex;
+}
+.social ul{
+    display: flex;
+    gap: 40px;
+}
+.site-menu li a{
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    padding: 15px 0px !important;
+    color: #000 !important;
+    display: inline-block;
+}
+.site-menu li  a.active{
+   color: #fd4d40 !important;
+}
+.social .fb{
+    color: #16c3b0
+}
+.social .twitter{
+    color: #71bc42;
+}
+.social .in{
+    color: #fdb62f;
 }

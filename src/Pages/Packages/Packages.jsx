@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from '../../Components/Header/Header'
 
 const Packages = () => {
   return (
-    <div>Packages pagersess</div>
+    <div><Header/>
+    packages page</div>
   )
 }
 
