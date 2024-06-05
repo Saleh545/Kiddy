@@ -1,11 +1,14 @@
 import React from 'react'
 import Header from '../../Components/Header/Header'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const About = () => {
+  const location = useLocation();
   return (
     <div>
-<Header/>
+
+{location.pathname === '/about' && <Header />}
+
    <div className="about-section">
         <div className="container">
           <div className="about">
