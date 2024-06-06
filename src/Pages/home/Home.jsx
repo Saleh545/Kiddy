@@ -11,6 +11,7 @@ import About from "../About/About";
 import Pricing from "../Pricing/Pricing";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "../../Components/Footer/Footer";
 const settings = {
   dots: true,
   infinite: true,
@@ -18,7 +19,7 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 5000,
 };
 const Home = () => {
   return (
@@ -82,7 +83,6 @@ const Home = () => {
 
       <About />
 
-      <Packages />
 
       <Pricing />
 
@@ -92,73 +92,100 @@ const Home = () => {
             <span>Testimonial</span>
             <h4>What Our Client Says About Us</h4>
           </div>
-
           <div className="testimonial">
             <div className="slider-container">
               <Slider {...settings}>
-              
-                <div className="alaaaaa">
-                  <div className="test-card">
-                    <div className="test-flex">
-                        <img
-                          src="https://preview.colorlib.com/theme/kiddy/images/person_3.jpg"
-                          alt=""
-                        />
-                      <div className="test-text">
-                        <h1>Jeff Woodland</h1>
-                        <span>Partner</span>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Aliquam earum libero rem maxime magnam.
-                          Similique esse ab earum, autem consectetur.
-                        </p>
-                      </div>
+                <div className="test-card">
+                  <div className="test-flex">
+                    <img
+                      src="https://preview.colorlib.com/theme/kiddy/images/person_3.jpg"
+                      alt=""
+                    />
+                    <div className="test-text">
+                      <h1>Jeff Woodland</h1>
+                      <span>Partner</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Aliquam earum libero rem maxime magnam. Similique
+                        esse ab earum, autem consectetur.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="alaaaaa">
-                  <div className="test-card">
-                    <div className="test-flex">
-                        <img
-                          src="https://preview.colorlib.com/theme/kiddy/images/person_1.jpg"
-                          alt=""
-                        />
-                      <div className="test-text">
-                        <h1>Jeff Woodland</h1>
-                        <span>Partner</span>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Aliquam earum libero rem maxime magnam.
-                          Similique esse ab earum, autem consectetur.
-                        </p>
-                      </div>
+                <div className="test-card">
+                  <div className="test-flex">
+                    <img
+                      src="https://preview.colorlib.com/theme/kiddy/images/person_1.jpg"
+                      alt=""
+                    />
+                    <div className="test-text">
+                      <h1>Jeff Woodland</h1>
+                      <span>Partner</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Aliquam earum libero rem maxime magnam. Similique
+                        esse ab earum, autem consectetur.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="alaaaaa">
-                  <div className="test-card">
-                    <div className="test-flex">
-                        <img
-                          src="https://preview.colorlib.com/theme/kiddy/images/person_2.jpg"
-                          alt=""
-                        />
-                      <div className="test-text">
-                        <h1>Jeff Woodland</h1>
-                        <span>Partner</span>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Aliquam earum libero rem maxime magnam.
-                          Similique esse ab earum, autem consectetur.
-                        </p>
-                      </div>
+                <div className="test-card">
+                  <div className="test-flex">
+                    <img
+                      src="https://preview.colorlib.com/theme/kiddy/images/person_2.jpg"
+                      alt=""
+                    />
+                    <div className="test-text">
+                      <h1>Jeff Woodland</h1>
+                      <span>Partner</span>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Aliquam earum libero rem maxime magnam. Similique
+                        esse ab earum, autem consectetur.
+                      </p>
                     </div>
                   </div>
                 </div>
               </Slider>
             </div>
+
+            <div className="testimontial-text">
+              <div className="card-center">
+                <h5 className="color-1">3423</h5>
+                <p>Happy Client</p>
+              </div>
+
+              <div className="card-center">
+                <h5 className="color-2">4398</h5>
+                <p>Members</p>
+              </div>
+
+              <div className="card-center">
+                <h5 className="color-3">50+</h5>
+                <p>Staffs</p>
+              </div>
+
+              <div className="card-center">
+                <h5 className="color-4">2000+</h5>
+                <p>Our Followers</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
+
+      <div className="bring-yellow">
+        <div className="container">
+          <div className="yellow-flex">
+            <h2>Bring Fun Life To Your Kids</h2>
+            <Link>Get Started  </Link>
+          </div>
+        </div>
+      </div>
+
+
+      <Footer/>
     </div>
   );
 };

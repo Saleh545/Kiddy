@@ -1,15 +1,16 @@
-import React from 'react'
-import Header from '../../Components/Header/Header'
-import { Link, useLocation } from 'react-router-dom'
+import React from "react";
+import Header from "../../Components/Header/Header";
+import { Link, useLocation } from "react-router-dom";
+import Packages from "../Packages/Packages";
+import "./about.css";
 
 const About = () => {
   const location = useLocation();
   return (
     <div>
+      {location.pathname === "/about" && <Header />}
 
-{location.pathname === '/about' && <Header />}
-
-   <div className="about-section">
+      <div className="about-section">
         <div className="container">
           <div className="about">
             <div className="about-img">
@@ -32,8 +33,75 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
-  )
-}
 
-export default About
+
+<div className="team-section">
+  <div className="container">
+    <div className="team-center">
+      <div className="team-text">
+
+      <span>The Team</span>
+      <h2>Meet The Team</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
+    </div>
+      </div>
+      <div className="team-cards">
+
+        <div className="team-card">
+          <img src="https://preview.colorlib.com/theme/kiddy/images/person_2.jpg" alt="" />
+        <div className="team-content">
+          <span>Founder</span>
+          <h1>James Doe</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
+        </div>
+        </div>
+        <div className="team-card">
+          <img src="https://preview.colorlib.com/theme/kiddy/images/person_2.jpg" alt="" />
+        <div className="team-content">
+          <span>Founder</span>
+          <h1>James Doe</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
+        </div>
+        </div>
+        <div className="team-card">
+          <img src="https://preview.colorlib.com/theme/kiddy/images/person_2.jpg" alt="" />
+        <div className="team-content">
+          <span>Founder</span>
+          <h1>James Doe</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
+        </div>
+        </div>
+        <div className="team-card">
+          <img src="https://preview.colorlib.com/theme/kiddy/images/person_2.jpg" alt="" />
+        <div className="team-content">
+          <span>Founder</span>
+          <h1>James Doe</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
+        </div>
+        </div>
+        <div className="team-card">
+          <img src="https://preview.colorlib.com/theme/kiddy/images/person_2.jpg" alt="" />
+        <div className="team-content">
+          <span>Founder</span>
+          <h1>James Doe</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
+        </div>
+        </div>
+        <div className="team-card">
+          <img src="https://preview.colorlib.com/theme/kiddy/images/person_2.jpg" alt="" />
+        <div className="team-content">
+          <span>Founder</span>
+          <h1>James Doe</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sapiente.</p>
+        </div>
+        </div>
+
+      </div>
+  </div>
+</div>
+      <Packages />
+    </div>
+  );
+};
+
+export default About;

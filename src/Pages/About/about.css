@@ -1,0 +1,252 @@
+.about-section {
+    background-color: #F6F5F5;
+    margin-top: 112px !important;
+    padding: 112px 0 !important;
+
+}
+
+.about-bck {
+    background-image: url("https://preview.colorlib.com/theme/kiddy/images/hero_1.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img {
+    width: 540px;
+    padding: 0 15px !important;
+}
+
+.about-img img {
+    width: 100% !important;
+}
+
+.about-text {
+    width: 38%;
+}
+
+.about-text span {
+    color: #fd4d40;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.about-text h2 {
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: #000;
+    font-size: 28px;
+    /* margin-top: 10px !important; */
+
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #364d59 !important;
+}
+
+.about-text a {
+    outline: none;
+    border: none;
+    padding: 10px 20px !important;
+    background-color: #ffc107;
+    border-radius: 30px 0;
+    padding-bottom: 1.5rem !important;
+    padding-top: 1.5rem !important;
+    cursor: pointer;
+    letter-spacing: .2rem;
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 48px 0 16px !important;
+    display: inline-block !important;
+    color: #000;
+}
+
+.about-text a:hover {
+    background-color: #e0a800;
+}
+
+
+.packages-section {
+    background-color: #17A2B8;
+    padding: 112px 0 !important;
+}
+
+.packages-card {
+    background-color: #fff;
+    width: 33.33%;
+    padding: 40px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.packages {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 3rem !important;
+}
+
+.packages-img {
+    width: 80px;
+    height: 80px;
+}
+
+.packages-img img {
+    width: 100%;
+}
+
+.packages-text-center {
+    text-align: center;
+}
+
+.packages-text-center span {
+    color: #fd4d40;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.packages-text-center h5 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.packages-card h3 {
+    font-size: 18px;
+    margin-bottom: 30px !important;
+    margin-top: 30px !important;
+    color: #16c3b0;
+    font-weight: 300;
+}
+
+.packages-card p {
+    text-align: center;
+    font-weight: 300;
+    color: #777;
+    margin-bottom: 1rem !important;
+}
+
+.packages-card a {
+    border-radius: 30px 0;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 10px 20px !important;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px !important;
+    margin-bottom: 1rem !important;
+}
+
+.packages-card .p1 {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.packages-card .p2 {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.packages-card .p2:hover {
+    background-color: #e0a800;
+}
+
+.packages-card .p3 {
+    background-color: #71bc42;
+    color: #fff;
+}
+
+.packages-card .p3:hover {
+    background-color: #5a9635;
+}
+
+.packages-card .p1:hover {
+    background-color: #c82333;
+}
+
+.packages-card .p-kids {
+    color: #dc3545 !important;
+}
+
+
+
+
+
+/* team section */
+.team-section {
+    background-color: #16c3b0;
+    ;
+    padding: 112px 0 !important;
+    text-align: center;
+}
+
+.team-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.team-text {
+    width: 49%;
+}
+
+.team-center span {
+    color: #fd4d40;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.team-center h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 8px !important;
+}
+
+.team-center p {
+    color: #364d59 !important;
+}
+
+.team-cards {
+    margin-top: 3rem !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.team-card {
+    background-color: #fff;
+    margin: 25px 15px !important;
+    padding: 64px 20px 20px !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: -49px;
+   
+
+}

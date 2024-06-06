@@ -1,11 +1,13 @@
 .header{
     background-color: #B2B2B2;
+ 
 }
 header{
     display: flex;
     justify-content: space-between;
     padding: 13px 36px 14px 0px !important;
 }
+
 .logo{
     display: inline;
 }
