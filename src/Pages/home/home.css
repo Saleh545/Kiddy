@@ -23,7 +23,7 @@ body {
 
 .bring-section {
     background-color: #B2B2B2;
-    height: 92vh;
+    height: 100vh;
     display: flex;
 
 }
@@ -36,7 +36,7 @@ body {
 
 .bring-text {
     width: 40%;
-    margin-bottom: 90px !important;
+    margin-top: 190px !important;
 }
 
 .bring-text span {
@@ -82,7 +82,7 @@ body {
 
 .bring-img {
     width: 50%;
-    height: 831px;
+    height: 695px;
     position: absolute;
     top: 0;
     right: 0;

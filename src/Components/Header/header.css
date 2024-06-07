@@ -1,48 +1,61 @@
-.header{
-    background-color: #B2B2B2;
- 
+.header {
+    position: absolute;
+    top: 0;
+    margin: 0 auto !important;
+    width: 100%;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     padding: 13px 36px 14px 0px !important;
+    z-index: 999 !important;
 }
 
-.logo{
+.logo {
     display: inline;
 }
-.logo a{
+
+.logo a {
     font-size: 2.7rem;
     color: #fff;
     line-height: 1.7;
 }
-.logo a span{
+
+.logo a span {
     color: #dc3545;
 }
-.quick-contact{
+
+.quick-contact {
     display: flex;
     column-gap: 48px;
 }
-.quick{
+
+.quick {
     display: flex;
     align-items: center;
     column-gap: 16px;
 }
-.quick svg  {
-font-size: 2rem;
+
+.quick svg {
+    font-size: 2rem;
 }
-.quick1 svg{
+
+.quick1 svg {
     color: #fdb62f;
 }
+
 .quick2 svg {
     color: #fd4d40;
 }
-.quick p{
+
+.quick p {
     line-height: 1.2;
     color: #fff;
     font-size: .9rem;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,29 +68,36 @@ nav{
     position: relative;
 
 }
-.site-menu{
+
+.site-menu {
     display: flex;
 }
-.social ul{
+
+.social ul {
     display: flex;
     gap: 40px;
 }
-.site-menu li a{
+
+.site-menu li a {
     margin-left: 15px !important;
     margin-right: 15px !important;
     padding: 15px 0px !important;
     color: #000 !important;
     display: inline-block;
 }
-.site-menu li  a.active{
-   color: #fd4d40 !important;
+
+.site-menu li a.active {
+    color: #fd4d40 !important;
 }
-.social .fb{
+
+.social .fb {
     color: #16c3b0
 }
-.social .twitter{
+
+.social .twitter {
     color: #71bc42;
 }
-.social .in{
+
+.social .in {
     color: #fdb62f;
 }

@@ -5,13 +5,12 @@
 
 }
 
-.about-bck {
-    background-image: url("https://preview.colorlib.com/theme/kiddy/images/hero_1.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+.react-parallax img {
+    filter: brightness(69%) contrast(100%) !important;
+    z-index: -1;
+    top: -28px;
 }
+
 
 .about {
     display: flex;
@@ -73,6 +72,44 @@
     background-color: #e0a800;
 }
 
+.hero-about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content {
+    margin-top: 140px !important;
+}
+
+.about-content .ab-tx {
+    color: #fd4d40;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700 !important;
+    line-height: 1;
+    margin-bottom: 16px !important;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #fff;
+}
+.about-content a{
+     color: #fff;
+}
+
+.about-content .drop {
+    padding: 0 16px !important;
+}
 
 .packages-section {
     background-color: #17A2B8;
@@ -232,8 +269,8 @@
 
 .team-card {
     background-color: #fff;
-    margin: 25px 15px !important;
-    padding: 64px 20px 20px !important;
+    margin: 42px 15px !important;
+    padding: 64px 20px 28px !important;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -246,7 +283,39 @@
     height: 90px;
     border-radius: 50%;
     position: absolute;
-    top: -49px;
-   
+    top: -46px;
+    border: 4px solid #fff;
+}
 
+.team-card .james1{
+    border-color: #16c3b0;
+}
+.team-card .james2{
+    border-color: #fdb62f;
+}
+.team-card .james3{
+    border-color: #fd4d40;
+}
+.team-card .james4{
+    border-color: #71bc42;
+    ;
+}
+.team-card .james5{
+    border-color: #039ce6;
+}
+.team-card .james6{
+    border-color: #fd4d40;
+}
+.team-content span {
+    color: #cccccc;
+}
+
+.team-content h1 {
+    font-size: 22px;
+    margin-bottom: 20px !important;
+    color: #364d59 !important;
+}
+
+.team-content p {
+    color: #364d59 !important;
 }

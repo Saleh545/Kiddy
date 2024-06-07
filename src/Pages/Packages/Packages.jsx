@@ -2,13 +2,40 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import { Link } from 'react-router-dom';
+import { Parallax } from 'react-parallax';
 
 const Packages = () => {
   const location = useLocation();
+  const backgroundImageUrl =
+  "https://preview.colorlib.com/theme/kiddy/images/hero_1.jpg";
 
   return (
     <div>
       {location.pathname === '/packages' && <Header />}
+      {location.pathname === "/packages" && (
+        <Parallax
+          bgImage={backgroundImageUrl}
+          strength={300}
+          bgImageStyle={{
+            filter: "brightness(80%) contrast(100%)",
+          }}
+        >
+          <div style={{ height: "777px" }}>
+            <div className="hero-about">
+              <div className="container">
+                <div className="about-content">
+                  <span className="ab-tx">Welcome To Our Website</span>
+                  <h1>Packages</h1>
+                  <p>
+                    <Link to="/">Home</Link> <span className="drop">/</span>{" "}
+                    <strong>Packages</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Parallax>
+      )}
 
       <div className="packages-section">
         <div className="container">
