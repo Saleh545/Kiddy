@@ -1,0 +1,30 @@
+.bring-yellow{
+    background-color: #ffc107!important;
+    padding: 48px 0 !important;
+}
+
+.yellow-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.yellow-flex h2{
+    font-size: 2rem !important;
+    color: #fff;
+}
+.yellow-flex a{
+    border-radius: 30px 0 !important;
+    background-color: #dc3545;
+    padding: 16px 3rem !important;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .8rem;
+    cursor: pointer;
+}
+.yellow-flex a:hover{
+    background-color: #c82333;
+}
+
+
+

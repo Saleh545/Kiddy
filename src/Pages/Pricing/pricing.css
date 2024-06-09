@@ -1,0 +1,113 @@
+
+.pricing-section {
+    padding: 112px 0 !important;
+}
+
+.pricing {
+    display: flex;
+    column-gap: 20px;
+}
+
+.pricing-card {
+    width: 33.33%;
+}
+
+.pricing-card a {
+    border-radius: 30px 0;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 10px 20px !important;
+    background-color: #16c3b0;
+    color: #000;
+    font-weight: 300;
+}
+
+.pricing-card .plan {
+    color: #fd4d40 !important;
+    background-color: #fff !important;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.pricing-card h4 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.pricing-card p {
+    line-height: 1.7;
+    color: #364d59 !important;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.pricing-card .price {
+    font-size: 26px;
+    color: #364d59 !important;
+    background-color: #16c3b0;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-card .price span{
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 13px !important;
+}
+
+.pricing-card .price2 {
+    font-size: 26px;
+    color: #364d59 !important;
+    background-color: #FD4D40;
+    border-radius: 50%;
+    padding: 20px !important;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-card h3 {
+    font-size: 20px;
+    margin: 30px 0 !important;
+    font-weight: 300 !important;
+    color: #364d59;
+}
+
+.pricing-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px !important;
+    font-weight: 300;
+    color: #364d59;
+}
+.pricing-card li svg {
+    color: #16C3B0;
+}
+
+.pricing-card .red-done svg {
+    color: #FD4D40 !important;
+}
+
+.pricing-card a {
+    margin-top: 50px !important;
+    display: inline-block;
+}
+
+.pricing-card .bur-red {
+    background-color: #FD4D40;
+    color: #fff;
+}

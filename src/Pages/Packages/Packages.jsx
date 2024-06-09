@@ -3,6 +3,9 @@ import { useLocation } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import { Link } from 'react-router-dom';
 import { Parallax } from 'react-parallax';
+import Testimonial from '../../Components/Testimonial/Testimonial';
+import Bring from '../../Components/Bring yellow/Bring';
+import Footer from '../../Components/Footer/Footer';
 
 const Packages = () => {
   const location = useLocation();
@@ -89,6 +92,10 @@ const Packages = () => {
           </div>
         </div>
       </div>
+      <Testimonial/>
+      <Bring/>
+      {location.pathname === '/packages' && <Footer />}
+
     </div>
   );
 }

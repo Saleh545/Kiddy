@@ -1,0 +1,36 @@
+.gallery-section {
+    padding: 112px 0 !important;
+}
+
+.gallery-center {
+    text-align: center;
+}
+
+.gallery-center span {
+    color: #fd4d40;
+    font-family: "Indie Flower", cursive !important;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.gallery-center h4 {
+    margin-bottom: 8px !important;
+    font-size: 32px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+.grid-img {
+    width: 285px;
+    height: 218px;
+    padding: 0 15px !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.grid-img img {
+    width: 100%;
+}

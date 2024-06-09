@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { IoLocationSharp } from "react-icons/io5";
+import { IoCloseOutline, IoLocationSharp } from "react-icons/io5";
 import { LuClock9 } from "react-icons/lu";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./header.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 
 const Header = () => {
+
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+    document.body.style.overflow = open ? 'visible' : 'hidden';
+  };
   return (
     <div className="header">
       <div className="container">
@@ -36,27 +44,30 @@ const Header = () => {
             </div>
           </div>
         </header>
-        <nav>
-          <ul className="site-menu">
-            <li>
-              <NavLink to="/">Home</NavLink>
+        <nav >
+          <ul className={`site-menu ${open ? "open" : ""}`}>
+          <li>
+              <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about" onClick={toggleMenu}>About</NavLink>
             </li>
             <li>
-              <NavLink to="/packages">Packages</NavLink>
+              <NavLink to="/packages" onClick={toggleMenu}>Packages</NavLink>
             </li>
             <li>
-              <NavLink to="/gallery">Gallery</NavLink>
+              <NavLink to="/gallery" onClick={toggleMenu}>Gallery</NavLink>
             </li>
             <li>
-              <NavLink to="/pricing">Pricing</NavLink>
+              <NavLink to="/pricing" onClick={toggleMenu}>Pricing</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/contact" onClick={toggleMenu}>Contact</NavLink>
             </li>
+            <IoCloseOutline className="close" onClick={toggleMenu}/>
+
           </ul>
+          <GiHamburgerMenu className="hamburger" onClick={toggleMenu} />
           <div className="social">
             <ul>
               <li>

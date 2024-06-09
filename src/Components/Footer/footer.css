@@ -5,6 +5,7 @@ footer {
 
 .footer-flex {
     display: flex;
+    flex-wrap: wrap ;
     padding: 0 15px !important;
     justify-content: space-between;
     width:93% ;
