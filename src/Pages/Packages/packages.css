@@ -1,0 +1,36 @@
+
+
+
+@media (max-width: 576px) {
+
+   
+}
+@media (max-width: 768px) {
+  .packages{
+    flex-direction: column;
+    padding: 0 15px !important;
+    gap: 15px;
+  }
+  .packages-card{
+    width: 100% !important;
+  }
+   
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .packages{
+        flex-direction: column;
+        padding: 0 15px !important;
+        gap: 15px;
+      }
+      .packages-card{
+        width: 100% !important;
+      }
+      .packages-section{
+        padding: 48px 0 !important;
+      }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1700px) {}

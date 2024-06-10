@@ -138,3 +138,32 @@
 .card-center p {
     color: #364d59 !important;
 }
+
+
+
+@media (max-width: 576px) {}
+
+@media (max-width: 768px) {
+    .testimonial{
+        padding: 0 15px !important;
+    }
+    .test-card{
+        width: 100% !important;
+    }
+    .slider-container {
+    width: 100%;
+    }
+    .testimontial-text{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .testimontial-text{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1700px) {}

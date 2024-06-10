@@ -8,6 +8,10 @@ import About from "../About/About";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../../Components/Footer/Footer";
+import Pricing from "../Pricing/Pricing";
+import Testimonial from "../../Components/Testimonial/Testimonial";
+import Bring from "../../Components/Bring yellow/Bring";
+
 
 
 const Home = () => {
@@ -69,6 +73,9 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Pricing/>
+      <Testimonial/>
+      <Bring/>
       <Footer/>
     </div>
   );

@@ -6,6 +6,8 @@ import { Parallax } from 'react-parallax';
 import Testimonial from '../../Components/Testimonial/Testimonial';
 import Bring from '../../Components/Bring yellow/Bring';
 import Footer from '../../Components/Footer/Footer';
+import "./packages.css"
+import Pricing from '../Pricing/Pricing';
 
 const Packages = () => {
   const location = useLocation();
@@ -92,8 +94,9 @@ const Packages = () => {
           </div>
         </div>
       </div>
-      <Testimonial/>
-      <Bring/>
+      {location.pathname === '/packages' && <Pricing />}
+      {location.pathname === '/packages' && <Testimonial />}
+      {location.pathname === '/packages' && <Bring />}
       {location.pathname === '/packages' && <Footer />}
 
     </div>

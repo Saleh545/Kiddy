@@ -69,7 +69,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="team-section">
+     {location.pathname === "/about" &&  <div className="team-section">
         <div className="container">
           <div className="team-center">
             <div className="team-text">
@@ -179,7 +179,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>}
 
       <Packages />
       {location.pathname === "/about" && <Footer />}

@@ -38,7 +38,8 @@ body {
 .bring-text {
     width: 40%;
     margin-top: 190px !important;
-}
+
+padding: 0 15px !important;}
 
 .bring-text span {
     color: #fd4d40;
@@ -83,7 +84,7 @@ body {
 
 .bring-img {
     width: 50%;
-    height: 695px;
+    height: 695px ;
     position: absolute;
     top: 0;
     right: 0;
@@ -101,6 +102,7 @@ body {
 .color-flex {
     display: flex;
     column-gap: 30px;
+    padding: 0 15px !important;
 }
 
 .color-card {
@@ -162,3 +164,23 @@ body {
 
 
 
+
+
+
+@media (max-width: 576px) {
+
+   
+}
+@media (max-width: 768px) {
+
+   
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+ 
+
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1700px) {}

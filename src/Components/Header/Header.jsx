@@ -7,16 +7,14 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-
-
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
-
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => {
     setOpen(!open);
-    document.body.style.overflow = open ? 'visible' : 'hidden';
+    document.body.style.overflow = open ? "visible" : "hidden";
   };
   return (
     <div className="header">
@@ -44,40 +42,80 @@ const Header = () => {
             </div>
           </div>
         </header>
-        <nav >
-          <ul className={`site-menu ${open ? "open" : ""}`}>
-          <li>
-              <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
+        <div className="overlay" onClick={() => setOpen(false)}></div>
+        <nav>
+          <ul className={`site-menu ${open ? "open" : "site-menu-none"}`}>
+            <li>
+              <NavLink to="/" onClick={toggleMenu}>
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about" onClick={toggleMenu}>About</NavLink>
+              <NavLink to="/about" onClick={toggleMenu}>
+                About
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/packages" onClick={toggleMenu}>Packages</NavLink>
+              <NavLink to="/packages" onClick={toggleMenu}>
+                Packages
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/gallery" onClick={toggleMenu}>Gallery</NavLink>
+              <NavLink to="/gallery" onClick={toggleMenu}>
+                Gallery
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/pricing" onClick={toggleMenu}>Pricing</NavLink>
+              <NavLink to="/pricing" onClick={toggleMenu}>
+                Pricing
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" onClick={toggleMenu}>Contact</NavLink>
+              <NavLink to="/contact" onClick={toggleMenu}>
+                Contact
+              </NavLink>
             </li>
-            <IoCloseOutline className="close" onClick={toggleMenu}/>
-
+            <IoCloseOutline className="close" onClick={toggleMenu} />
           </ul>
-          <GiHamburgerMenu className="hamburger" onClick={toggleMenu} />
+          <ul className="site-menu site-menu-block">
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/packages">Packages</NavLink>
+            </li>
+            <li>
+              <NavLink to="/gallery">Gallery</NavLink>
+            </li>
+            <li>
+              <NavLink to="/pricing">Pricing</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+            <IoCloseOutline className="close" onClick={toggleMenu} />
+          </ul>
+          <RxHamburgerMenu className="hamburger" onClick={toggleMenu} />
+
           <div className="social">
             <ul>
               <li>
-                <Link to="https://www.facebook.com/ " className="fb"><FaFacebookF /></Link>
+                <Link to="https://www.facebook.com/ " className="fb">
+                  <FaFacebookF />
+                </Link>
               </li>
               <li>
-                <Link to="https://www.twitter.com/" className="twitter"><FaTwitter /></Link>
+                <Link to="https://www.twitter.com/" className="twitter">
+                  <FaTwitter />
+                </Link>
               </li>
               <li>
-                <Link to="https://www.linkedin.com/" className="in"><FaLinkedinIn /></Link>
+                <Link to="https://www.linkedin.com/" className="in">
+                  <FaLinkedinIn />
+                </Link>
               </li>
             </ul>
           </div>

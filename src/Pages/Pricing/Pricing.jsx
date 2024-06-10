@@ -103,7 +103,6 @@ const Pricing = () => {
         </div>
       </div>
 
-      <Testimonial/>
       {location.pathname === '/pricing' && <Footer />}
 
     </div>
