@@ -94,7 +94,6 @@ const Packages = () => {
           </div>
         </div>
       </div>
-      {location.pathname === '/packages' && <Pricing />}
       {location.pathname === '/packages' && <Testimonial />}
       {location.pathname === '/packages' && <Bring />}
       {location.pathname === '/packages' && <Footer />}

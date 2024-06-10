@@ -83,6 +83,7 @@
 
 .about-content {
     margin-top: 140px !important;
+    padding: 0 15px !important;
 }
 
 .about-content .ab-tx {
@@ -338,6 +339,16 @@
     }
     .about-img{
         width: 100%;
+    }
+    .about-content h1{
+        font-size: 32px;
+    }
+    .team-cards{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .team-card{
+
     }
    
 }

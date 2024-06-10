@@ -103,6 +103,7 @@ const Pricing = () => {
         </div>
       </div>
 
+      {location.pathname === '/pricing' && <Testimonial />}
       {location.pathname === '/pricing' && <Footer />}
 
     </div>

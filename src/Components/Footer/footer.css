@@ -123,6 +123,9 @@ form {
 @media (max-width: 576px) {}
 
 @media (max-width: 768px) {
+    footer{
+        padding: 4em 0!important;
+    }
     .footer-flex {
         flex-direction: column;
     }
@@ -135,6 +138,7 @@ form {
     }
     .navigation {
         padding: 0  !important;
+        margin-top: 15px !important;
     }
 
 }
